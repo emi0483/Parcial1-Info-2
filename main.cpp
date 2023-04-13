@@ -20,7 +20,6 @@ int main()
         else if(selection == 2){
             cout << "Gestionar.";
         }
-
         else if(selection == 3){
             cout << "Borrando...";
         }
