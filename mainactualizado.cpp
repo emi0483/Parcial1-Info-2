@@ -101,6 +101,19 @@ bool menu() {
                estudio = 4
                independiente = estudio - (credito*48)/16;
            } 
+           else if (credito == 4){
+                estudio = 7
+               independiente = estudio - (credito*48)/16;
+           }
+           else if (credito == 4){
+               estudio = 7
+               independiente = estudio - (credito*48)/16;
+           }
+  ofstream Archivo;//Variable para escribir el txt.
+    char ***Materias=nullptr; // Arreglo dinamico con ptr
+    int Num=0;//Numero de materias;
+    char documento[11];//Numero de documento;
+    char ***horario = nullptr;
             cout << "Gestionar el horario.";
             cout << "Tienes" << creditos<< "en" << materia <<"tu tiempo de clase es de:"<< estudio <<" materia, debes de asginar" << independiente << "tus espacios disponbles son:" << espacios;
             
