@@ -77,7 +77,11 @@ bool menu() {
 
         if (selectedOption == 1) {
             cout << "Ingresar materia.";
-         ingresadoPorElUsuario(); // Llamamos a la función para leer e imprimir la cadena ingresada
+         
+        }
+        else if (selectedOption == 2) {
+            cout << "Gestionar el horario.";
+            ingresadoPorElUsuario(); // Llamamos a la función para leer e imprimir la cadena ingresada
             return 0;
             encontrar_comas("archivo.txt"); // Llama a la función con el nombre del archivo a procesar
             return 0;
@@ -86,21 +90,22 @@ bool menu() {
             int independiente; 
             int estudio;
             if (credito == 1){
-                estudio == 2 horas
+                estudio = 2 
                 independiente = estudio - (credito*48)/16;
             }
             else if (credito == 3)
-              e
+               estudio = 4
+               independiente = estudio - (credito*48)/16;
             } 
+            else if (credito == 3)
+               estudio = 4
+               independiente = estudio - (credito*48)/16;
+           } 
             cout << "Gestionar el horario.";
             cout << "Tienes" << creditos<< "en" << materia <<"tu tiempo de clase es de:"<< estudio <<" materia, debes de asginar" << independiente << "tus espacios disponbles son:" << espacios;
             
             
             abrirArchivoSalida(nombreArchivo, )
-        }
-        else if (selectedOption == 2) {
-            cout << "Gestionar el horario.";
-            cout << "Tienes" << creditos<<""
         }
         else if (selectedOption == 3) {
             cout << "De regreso al menu inicial";
