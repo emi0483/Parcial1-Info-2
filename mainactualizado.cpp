@@ -77,6 +77,24 @@ bool menu() {
 
         if (selectedOption == 1) {
             cout << "Ingresar materia.";
+         ingresadoPorElUsuario(); // Llamamos a la función para leer e imprimir la cadena ingresada
+            return 0;
+            encontrar_comas("archivo.txt"); // Llama a la función con el nombre del archivo a procesar
+            return 0;
+            
+            int credito;
+            int independiente; 
+            int estudio;
+            if (credito == 1){
+                estudio == 2 horas
+                independiente = estudio - (credito*48)/16;
+            }
+            else if (credito == 3)
+              e
+            } 
+            cout << "Gestionar el horario.";
+            cout << "Tienes" << creditos<< "en" << materia <<"tu tiempo de clase es de:"<< estudio <<" materia, debes de asginar" << independiente << "tus espacios disponbles son:" << espacios;
+            
             
             abrirArchivoSalida(nombreArchivo, )
         }
@@ -135,5 +153,28 @@ void encontrarBloquesHoras(char *horasCurso, int longitud, ofstream &archivoSali
     for (int j=posAntes; j<posAfter;j++){
         chunk[k] = horasCurso[j];
         k++;
+    }
+}
+void ingresadoPorElUsuario() {
+   const int MAX_LENGTH = 100; // Definimos el tamaño máximo del arreglo
+   char input[MAX_LENGTH]; // Declaramos el arreglo donde almacenaremos la cadena ingresada
+   cout << "Ingrese una cadena de caracteres: ";
+   cin.getline(input, MAX_LENGTH); // Usamos cin.getline() para leer la entrada del usuario
+   cout << "La cadena ingresada es: " << input << endl; // Imprimimos la cadena ingresada
+}
+void encontrar_comas(const char* archivo) {
+    ifstream fichero(archivo); // Abre el archivo en modo lectura
+    if (fichero.is_open()) { // Comprueba si el archivo se ha abierto correctamente
+        char c;
+        int pos = 0;
+        while (fichero.get(c)) { // Lee cada caracter del archivo
+            if (c == ',') { // Si encuentra una coma, la imprime junto a su posición
+                cout << "Coma encontrada en la posición " << pos << endl;
+            }
+            pos++;
+        }
+        fichero.close(); // Cierra el archivo
+    } else {
+        cout << "Error al abrir el archivo." << endl;
     }
 }
